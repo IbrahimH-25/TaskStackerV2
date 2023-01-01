@@ -19,31 +19,38 @@ class TaskPage extends StatelessWidget {
     title: Text("Task Page"),
 
     ),*/
-      body: ListView(
-        padding: const EdgeInsets.all(8),
-      children: <Widget>[
-        Container(
-          height: 50,
-          color: Colors.amber[600],
-          child:  ListTile(
-            title: Text('ListTile with red background'),
-            tileColor: Colors.red,
+      body:
+      Stack(
+      children:<Widget>[
+        ListView(
+          padding: const EdgeInsets.all(8),
+          children: <Widget>[
+            Container(
+              height: 50,
+              color: Colors.amber[600],
+              child:  ListTile(
+                title: Text('ListTile with red background'),
+                tileColor: Colors.red,
+              ),
+
+            ),
+            Container(
+              height: 50,
+              color: Colors.amber[500],
+              child: const Center(child: Text('Entry B')),
+            ),
+            Container(
+              height: 50,
+              color: Colors.amber[100],
+              child: const Center(child: Text('Entry C')),
+            ),
+          ],
+
           ),
 
-        ),
-        Container(
-          height: 50,
-          color: Colors.amber[500],
-          child: const Center(child: Text('Entry B')),
-        ),
-        Container(
-          height: 50,
-          color: Colors.amber[100],
-          child: const Center(child: Text('Entry C')),
-        ),
       ],
-
       ),
+
     );
   }
   }

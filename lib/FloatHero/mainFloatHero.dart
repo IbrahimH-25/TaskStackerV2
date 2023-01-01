@@ -1,9 +1,9 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:popup_card/fake_data.dart';
-import 'package:popup_card/styles.dart';
-import 'package:popup_card/models.dart';
+import 'fake_data.dart';
+import 'styles.dart';
+import 'models.dart';
 
 import 'add_todo_button.dart';
 import 'custom_rect_tween.dart';
@@ -74,8 +74,8 @@ class Homee extends StatelessWidget {
 /// {@endtemplate}
 class _TodoListContent extends StatelessWidget {
   const _TodoListContent({
-    Key key,
-    @required this.todos,
+    required Key key,
+    required this.todos,
   }) : super(key: key);
 
   final List<Todo> todos;
@@ -101,8 +101,8 @@ class _TodoListContent extends StatelessWidget {
 class _TodoCard extends StatelessWidget {
   /// {@macro todo_card}
   const _TodoCard({
-    Key key,
-    @required this.todo,
+    required Key key,
+    required this.todo,
   }) : super(key: key);
 
   final Todo todo;
